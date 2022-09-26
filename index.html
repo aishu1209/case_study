@@ -1,0 +1,273 @@
+<html>
+<head>
+    <title>Google Lens vs. MobileNet Case Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <center>
+    
+<ol>
+    <div class = "test_image_and_result">
+
+            <li>
+                <b>Test Image - </b>
+                <img src="chair.jpg" class="img-responsive">
+                </li>
+
+                <p>
+                Output on <b>Google Lens</b> - 
+                <span>Chair</span>
+                </p>
+
+                <p>
+                Output on <b>Mobilenet Model</b> - 
+                <span>Barber Chair</span>
+
+                </p>
+
+                <div class="mini_result">
+                <p>Result - Google Lens is more accurate</p>
+                <hr>
+                <p> </p>
+            </div>
+                </div>
+                <br>
+            
+<div class = "test_image_and_result">
+                
+                            <li>
+                                <b>Test Image - </b>
+                                <img src="clock.jpg" class="img-responsive" id="clock">
+                                </li>
+                
+                                <p>
+                                Output on <b>Google Lens</b> - 
+                                <span>Digital Clock</span>
+                                </p>
+                
+                                <p>
+                                Output on <b>Mobilenet Model</b> - 
+                                <span>Digital Clock</span>
+                
+                                </p>
+                
+                                <div class="mini_result">
+                                <p>Result - Google Lens and MobileNet are both accurate</p>
+                                <hr>
+                                <p> </p>
+                            </div>
+                                </div>
+                                <br>
+                                <div class = "test_image_and_result">
+                
+                                    <li>
+                                        <b>Test Image - </b>
+                                        <img src="eraser.jpg" class="img-responsive">
+                                        </li>
+                        
+                                        <p>
+                                        Output on <b>Google Lens</b> - 
+                                        <span>Butter</span>
+                                        </p>
+                        
+                                        <p>
+                                        Output on <b>Mobilenet Model</b> - 
+                                        <span>Electrical Switch</span>
+                        
+                                        </p>
+                        
+                                        <div class="mini_result">
+                                        <p>Result - MobileNet is more accurate</p>
+                                        <hr>
+                                        <p> </p>
+                                    </div>
+                                        </div>
+                                        <br>
+                                        <div class = "test_image_and_result">
+                
+                                            <li>
+                                                <b>Test Image - </b>
+                                                <img src="fan.jpg" class="img-responsive">
+                                                </li>
+                                
+                                                <p>
+                                                Output on <b>Google Lens</b> - 
+                                                <span>Fan</span>
+                                                </p>
+                                
+                                                <p>
+                                                Output on <b>Mobilenet Model</b> - 
+                                                <span>Spotlight</span>
+                                
+                                                </p>
+                                
+                                                <div class="mini_result">
+                                                <p>Result - Google Lens is more accurate</p>
+                                                <hr>
+                                                <p> </p>
+                                            </div>
+                                                </div>
+                                                <br><div class = "test_image_and_result">
+                
+                                                    <li>
+                                                        <b>Test Image - </b>
+                                                        <img src="fan_remote.jpg" class="img-responsive">
+                                                        </li>
+                                        
+                                                        <p>
+                                                        Output on <b>Google Lens</b> - 
+                                                        <span>Fan Remote</span>
+                                                        </p>
+                                        
+                                                        <p>
+                                                        Output on <b>Mobilenet Model</b> - 
+                                                        <span>Computer Mouse</span>
+                                        
+                                                        </p>
+                                        
+                                                        <div class="mini_result">
+                                                        <p>Result - Google Lens is more accurate</p>
+                                                        <hr>
+                                                        <p> </p>
+                                                    </div>
+                                                        </div>
+                                                        <br>
+                                                        <div class = "test_image_and_result">
+                
+                                                            <li>
+                                                                <b>Test Image - </b>
+                                                                <img src="laptop.jpg" class="img-responsive">
+                                                                </li>
+                                                
+                                                                <hp5>
+                                                                Output on <b>Google Lens</b> - 
+                                                                <span>MacBook</span>
+                                                                </p>
+                                                
+                                                                <p>
+                                                                Output on <b>Mobilenet Model</b> - 
+                                                                <span>Computer</span>
+                                                
+                                                                </p>
+                                                
+                                                                <div class="mini_result">
+                                                                <p>Result - Google Lens is more accurate</p>
+                                                                <hr>
+                                                                <p> </p>
+                                                            </div>
+                                                                </div>
+                                                                <br>
+                                                                <div class = "test_image_and_result">
+                
+                                                                    <li>
+                                                                        <b>Test Image - </b>
+                                                                        <img src="painting.jpg" class="img-responsive">
+                                                                        </li>
+                                                        
+                                                                        <p>
+                                                                        Output on <b>Google Lens</b> - 
+                                                                        <span>Starfish</span>
+                                                                        </p>
+                                                        
+                                                                        <p>
+                                                                        Output on <b>Mobilenet Model</b> - 
+                                                                        <span>Television</span>
+                                                        
+                                                                        </p>
+                                                        
+                                                                        <div class="mini_result">
+                                                                        <p>Result - MobileNet is more accurate</p>
+                                                                        <hr>
+                                                                        <p> </p>
+                                                                    </div>
+                                                                        </div>
+                                                                        <br>
+                                                                        <div class = "test_image_and_result">
+                
+                                                                            <li>
+                                                                                <b>Test Image - </b>
+                                                                                <img src="bird_clock.jpg" class="img-responsive">
+                                                                                </li>
+                                                                
+                                                                                <p>
+                                                                                Output on <b>Google Lens</b> - 
+                                                                                <span>Bird Clock</span>
+                                                                                </p>
+                                                                
+                                                                                <p>
+                                                                                Output on <b>Mobilenet Model</b> - 
+                                                                                <span>Wall Clock</span>
+                                                                
+                                                                                </p>
+                                                                
+                                                                                <div class="mini_result">
+                                                                                <p>Result - Google Lens is more accurate</p>
+                                                                                <hr>
+                                                                                <p> </p>
+                                                                            </div>
+                                                                                </div>
+                                                                                <br>
+                                                                                <div class = "test_image_and_result">
+                
+                                                                                    <li>
+                                                                                        <b>Test Image - </b>
+                                                                                        <img src="pencil.jpg" class="img-responsive">
+                                                                                        </li>
+                                                                        
+                                                                                        <p>
+                                                                                        Output on <b>Google Lens</b> - 
+                                                                                        <span>Apple Pencil</span>
+                                                                                        </p>
+                                                                        
+                                                                                        <p>
+                                                                                        Output on <b>Mobilenet Model</b> - 
+                                                                                        <span>Matchstick</span>
+                                                                        
+                                                                                        </p>
+                                                                        
+                                                                                        <div class="mini_result">
+                                                                                        <p>Result - Google Lens is more accurate</p>
+                                                                                        <hr>
+                                                                                        <p> </p>
+                                                                                    </div>
+                                                                                        </div>
+                                                                                        <br>
+                                                                                        <div class = "test_image_and_result">
+                
+                                                                                            <li>
+                                                                                                <b>Test Image - </b>
+                                                                                                <img src="remote.jpg" class="img-responsive" id="remote">
+                                                                                                </li>
+                                                                                
+                                                                                                <p>
+                                                                                                Output on <b>Google Lens</b> - 
+                                                                                                <span>Remote</span>
+                                                                                                </p>
+                                                                                
+                                                                                                <p>
+                                                                                                Output on <b>Mobilenet Model</b> - 
+                                                                                                <span>Remote</span>
+                                                                                
+                                                                                                </p>
+                                                                                
+                                                                                                <div class="mini_result">
+                                                                                                <p>Result - Google Lens and MobileNet are both accurate</p>
+                                                                                                <hr>
+                                                                                                <p>I have tested 10 images, out of which 8 were guessed more accurately by <b>Google Lens</b>, and 4 were guessed more accurately by <b>MobileNet</b></p>
+                                                                                                </div>
+                                                                                                </div>
+                                                                                                
+                                                                                                        </ol>
+                                                                                                        <div class="copy_right_footer">
+                                                                                                            Developed By: Aashritha
+                                                                                                        </div>
+                                                                                                        </center>
+                                                                                                        </body>
+                                                                                                        </html>
